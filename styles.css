@@ -1,0 +1,84 @@
+
+body{
+    background-color: rgb(249, 249, 246);
+    border-radius:10px;
+    font-family:'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height: auto;
+}
+
+
+button{
+    width: auto;
+    height: 25px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(141, 141, 210);
+    color: beige;
+}
+
+.main-container{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    transform: rotate(45deg);
+}
+.item{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    opacity: 60%;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.red{
+    background-color: red;
+    border: 2px solid red;
+}
+
+.yellow{
+    background-color: yellow;
+    border: 2px solid yellow;
+}
+
+.blue{
+    background-color: blue;
+    border: 2px solid blue;
+}
+
+.green{
+    background-color:  green;
+    border: 2px solid green;
+}
+.item:hover, .item:active,
+.active{
+    opacity: 100%;
+    
+}
+.red:hover{
+    box-shadow: -15px -11px 25px 4px rgb(241, 187, 187);
+}
+
+.green:hover{
+    box-shadow: 15px -11px 25px 4px rgb(162, 227, 162);
+}
+
+.yellow:hover{
+    box-shadow: -15px 11px 25px 4px rgb(227, 227, 156);
+}
+
+.blue:hover{
+    box-shadow: 15px 11px 25px 4px rgb(142, 142, 222);
+}
