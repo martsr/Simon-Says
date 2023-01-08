@@ -14,16 +14,7 @@ header{
 }
 
 
-button{
-    width: auto;
-    height: 25px;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgb(141, 141, 210);
-    color: beige;
-}
+
 
 .main-container{
     margin-top: 70px;
@@ -38,7 +29,6 @@ button{
     width: 200px;
     margin: 10px;
     font-weight: bold;
-    color: white;
     opacity: 60%;
     cursor: pointer;
     border-radius: 40px;

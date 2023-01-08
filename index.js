@@ -66,10 +66,11 @@ function changeColor(square) {
 }
 
 function resetGame() {
+    document.querySelector('.top').classList.replace('alert-danger', 'alert-primary');
+    startBtn.classList.replace('btn-outline-danger','btn-outline-primary');
     pcOrder = [];
     turns = 0;
     startBtn.innerHTML="START";
-    state.style.color = 'black';
 }
 function blockUserInput() {
     document.querySelectorAll('.item').forEach(function ($cuadro) {
@@ -103,10 +104,15 @@ function getUserSelection(e) {
 }
 
 function lost() {
-    state.innerHTML = "Perdiste, toca REINICIAR para volver a jugar."
-    startBtn.innerHTML="REINICIAR"
+    document.querySelector('.top').classList.replace('alert-primary', 'alert-danger');
+    state.innerHTML = "Perdiste, toca REINICIAR para volver a jugar.";
+    startBtn.innerHTML="REINICIAR";
     state.style.color = 'red';
-    setTimeout(()=>resetGame(),3000);
+    startBtn.classList.replace('btn-outline-primary','btn-outline-danger');
+    if(startBtn.clicked == true){
+        setTimeout(()=>resetGame(),3000);
+    }
+    
 }
 function checkSelection() {
     console.log(pcOrder.length);
